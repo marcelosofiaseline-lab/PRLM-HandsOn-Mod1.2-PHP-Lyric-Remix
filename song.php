@@ -124,7 +124,7 @@
 
     <h1>⊹₊⟡⋆♪‧₊˚˙⋆✮. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.✮⋆˙˚₊‧♪ᯓ★ˎˊ˗</h1>
     <h4>[Verse 1]</h4>
-    <p><?php foreach ($verse1 as $line) echo "<p>$line</p>"; ?></p>
+    <?php foreach ($verse1 as $line) echo "<p>$line</p>"; ?>
 
     <h4>[Pre-Chorus]</h4>
     <?php foreach ($prechorus1 as $line) echo "<p>$line</p>"; ?>
