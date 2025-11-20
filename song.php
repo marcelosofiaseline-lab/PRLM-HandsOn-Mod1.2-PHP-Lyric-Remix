@@ -9,9 +9,9 @@
     $adjectives = ["sweet", "dazzling"];
 
 
-    $verse = 2;
+    $verse = "2";
     $chorus = 2;
-    $prechorus = 2;
+    $prechorus = "2";
     $postchorus = 2;
 
     $totalsections = $verse + $chorus + $prechorus + $postchorus;
