@@ -1,14 +1,16 @@
 <?php 
+    // VARIABLE STRINGS
     $title = "Dance With You";
     $artist = "Huening Kai from TXT";
     $album = "Together Album";
     $type = "Contemporary R&B and Latin Dance-Pop";
 
+    // MADE AN ARRAY FOR EACH NOUNS, VERBS AND ADJECTIVES
     $nouns = ["you", "steps", "hands"];
     $verbs = ["Matching", "hold", "dance", "wanna"];
     $adjectives = ["sweet", "dazzling"];
 
-
+    // HOW MANY SECTIONS AND ADDED THEM ALL USING OPERATORS AND JUGGLING
     $verse = "2";
     $chorus = 2;
     $prechorus = "2";
@@ -16,9 +18,12 @@
 
     $totalsections = $verse + $chorus + $prechorus + $postchorus;
 
+    // MOST REPEATED WORD AND USED OPERATORS AND JUGGLING
     $danceTextInChorus = "6";
     $totalDanceRepeats = $danceTextInChorus * 2;
     
+
+    // EACH SECTIONS AS ITS OWN ARRAYS AND USED THE ARRAY FOR NOUNS/VERBS/ADJECTIVES FOR REPEATING WORDS
     $verse1 = [
         "Closer",
         "I want to know {$nouns[0]}, down to the depths of your heart
@@ -78,6 +83,7 @@
         "(Two becoming one, I {$verbs[3]} {$verbs[2]} with {$nouns[0]})",
     ];
 
+    // THE POSTCHORUS ARE THE SAME AND JUST COPIED IT
     $postchorus2 = $postchorus1;
 
 ?>
@@ -90,6 +96,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dance With You (By Huening Kai from TXT)</title>
     <style>
+        /* CSS */
         body {
             font-family: Monospace;
             padding: 20px;
@@ -115,8 +122,11 @@
     </style>
 </head>
 <body>
+    <!-- LINKED AN IMAGE -->
     <img src="https://shoptxtofficial.com/cdn/shop/files/TXT-00005_-_The_Star_Chapter__TOGETHER_M.png?v=1750899146&width=800"
         alt="TXT TOGETHER ALBUM">
+
+    <!-- USED VARIABLES -->
     <h1>Title: <?php echo $title; ?></h1>
     <h2>Album: <?php echo $album; ?></h2>
     <h3>Artist: <?php echo $artist; ?></h3>
@@ -124,6 +134,7 @@
 
     <h1>⊹₊⟡⋆♪‧₊˚˙⋆✮. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.✮⋆˙˚₊‧♪ᯓ★ˎˊ˗</h1>
     <h4>[Verse 1]</h4>
+    <!-- USED FOR LOOP FOR EACH SECTIONS -->
     <?php foreach ($verse1 as $line) echo "<p>$line</p>"; ?>
 
     <h4>[Pre-Chorus]</h4>
@@ -148,16 +159,20 @@
     <?php foreach ($postchorus2 as $line) echo "<p>$line</p>"; ?>
 
     <h1>⊹₊⟡⋆♪‧₊˚˙⋆✮. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.✮⋆˙˚₊‧♪ᯓ★ˎˊ˗</h1>
+
+    <!-- TOTAL OF EACH SECTIONS -->
     <p>Total Sections: </p>
     <ul>
         <li><?php echo $totalsections ;?></li>
     </ul>
 
+    <!-- CALLED THE ARRAY FOR MOST REPEATED WORD -->
     <p>Most repeated word:</p>
     <ul>
         <li><?php echo $verbs[2]; ?></li>
     </ul>
-
+    
+    <!-- HOW MUCH DANCE HAS REPEATED -->
     <p>Repeats:</p>
     <ul>
         <li><?php echo $totalDanceRepeats; ?></li>
